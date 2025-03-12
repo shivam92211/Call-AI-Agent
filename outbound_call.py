@@ -1,20 +1,15 @@
 import os
-
 from dotenv import load_dotenv
-
-from vocode.streaming.models.agent import ChatGPTAgentConfig
+from speller_agent import SpellerAgentConfig
 from vocode.streaming.models.message import BaseMessage
 from vocode.streaming.models.telephony import TwilioConfig
-
-load_dotenv()
-
-from speller_agent import SpellerAgentConfig
-
-from vocode.streaming.telephony.config_manager.redis_config_manager import RedisConfigManager
+from vocode.streaming.models.agent import ChatGPTAgentConfig
 from vocode.streaming.telephony.conversation.outbound_call import OutboundCall
 from vocode.streaming.synthesizer.eleven_labs_synthesizer import ElevenLabsSynthesizerConfig
-from vocode.streaming.synthesizer.eleven_labs_synthesizer import AudioEncoding
+from vocode.streaming.telephony.config_manager.redis_config_manager import RedisConfigManager
 
+
+load_dotenv()
 BASE_URL = os.environ["BASE_URL"]
 
 

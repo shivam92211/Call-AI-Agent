@@ -13,8 +13,8 @@ Watch a quick demo of the project here: [Telephony Agent Demo](https://youtu.be/
 Open your terminal and run:
 
 ```bash
-git clone <your_repo_url>
-cd <your_repo_directory>
+git clone https://github.com/shivam92211/Call-AI-Agent.git
+cd Call-AI-Agent
 ```
 
 ### 2. Install Prerequisites
